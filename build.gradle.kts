@@ -34,6 +34,16 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.opentest4j)
 
+    implementation("com.anthropic:anthropic-java:0.8.0")
+    implementation("com.anthropic:anthropic-java-bedrock:1.2.0")
+    implementation("com.amazonaws:aws-java-sdk:1.12.782")
+    implementation("com.openai:openai-java:1.4.1")
+
+    implementation("io.github.java-diff-utils:java-diff-utils:4.15")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.18.3")
+    implementation("com.vladsch.flexmark:flexmark-all:0.64.8")
+    implementation("org.eclipse.jgit:org.eclipse.jgit:7.1.0.202411261347-r")
+
     // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
     intellijPlatform {
         create(providers.gradleProperty("platformType"), providers.gradleProperty("platformVersion"))
