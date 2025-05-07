@@ -34,7 +34,7 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.opentest4j)
 
-    implementation("com.anthropic:anthropic-java:0.8.0")
+    implementation("com.anthropic:anthropic-java:1.4.0")
     implementation("com.anthropic:anthropic-java-bedrock:1.2.0")
     implementation("com.amazonaws:aws-java-sdk:1.12.782")
     implementation("com.openai:openai-java:1.4.1")
