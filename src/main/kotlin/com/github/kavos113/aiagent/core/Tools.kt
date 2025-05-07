@@ -48,8 +48,6 @@ object Tools {
 
         val commandParts = command.split("\\s+".toRegex())
 
-        println(commandParts)
-
         val commandLine = GeneralCommandLine(commandParts)
         commandLine.setWorkDirectory(path)
         commandLine.charset = Charsets.UTF_8
@@ -60,7 +58,7 @@ object Tools {
         processHandler.addProcessListener(object : ProcessAdapter() {
             override fun onTextAvailable(event: ProcessEvent, outputType: Key<*>) {
                 sb.append(event.text)
-                println(event.text)
+//                println(event.text)
             }
 
             override fun processTerminated(event: ProcessEvent) {

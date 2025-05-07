@@ -41,10 +41,8 @@ class ToolsTest : BasePlatformTestCase() {
     }
 
     fun testExecuteCommand() {
-        val command = "pwd"
+        val command = "echo Hello, World!"
         val result = Tools.executeCommand(command, tempDir.toString())
-
-        println(result)
 
         assertTrue(result.contains("Hello, World!"))
     }

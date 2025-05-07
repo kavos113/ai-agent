@@ -9,7 +9,7 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.kavos113.aiagent.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.kavos113.aiagent.ui.MainWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.kavos113.aiagent.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>
