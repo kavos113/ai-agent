@@ -15,7 +15,21 @@ object Tools {
         ReadFile,
         WriteFile,
         AskUser,
-        TaskComplete,
+        TaskComplete;
+
+        companion object {
+            fun fromString(name: String): ToolName {
+                return when(name) {
+                    "list_files" -> ListFiles
+                    "execute_command" -> ExecuteCommand
+                    "read_file" -> ReadFile
+                    "write_file" -> WriteFile
+                    "ask_user" -> AskUser
+                    "task_complete" -> TaskComplete
+                    else -> throw IllegalArgumentException("Unknown tool name: $name")
+                }
+            }
+        }
     }
 
     fun listFiles(path: String, recursive: Boolean): String {
