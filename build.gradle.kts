@@ -40,7 +40,7 @@ dependencies {
     implementation("com.openai:openai-java:1.4.1")
 
     implementation("io.github.java-diff-utils:java-diff-utils:4.15")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.18.3")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.19.0")
     implementation("com.vladsch.flexmark:flexmark-all:0.64.8")
     implementation("org.eclipse.jgit:org.eclipse.jgit:7.1.0.202411261347-r")
 
