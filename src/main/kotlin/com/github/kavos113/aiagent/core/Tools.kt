@@ -48,6 +48,8 @@ object Tools {
 
         val commandParts = command.split("\\s+".toRegex())
 
+        println(commandParts)
+
         val commandLine = GeneralCommandLine(commandParts)
         commandLine.setWorkDirectory(path)
         commandLine.charset = Charsets.UTF_8
